@@ -115,6 +115,9 @@ figcaption {
 	font-family: monospace;
 }
 
+hr {
+	color: var(--text-color)}
+
 footer {
 	position: fixed;
 	bottom: 0px;
