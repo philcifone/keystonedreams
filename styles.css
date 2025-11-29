@@ -1,3 +1,10 @@
+:root {
+	--bg-color:#3F4739;
+	--lite-color:#717568;
+	--text-color:#E1F4CB;
+	--accent-color:#F1BF98;
+}
+
 @font-face {
 	font-family: 'Libre Baskerville';
 	src: url('../fonts/libre-baskerville-latin-500-normal.woff2') format('woff2'),
@@ -11,25 +18,25 @@ body {
 	font-family: "Libre Baskerville", serif;
 	padding-top: 64px;
 	padding-bottom: 128px;
-	background-color: #282828;
+	background-color: var(--bg-color);
 }
 
 h1 {
-	color: white;
+	color: var(--text-color);
 	font-size: 32px;
 	text-align: center;
 	padding-bottom: 24px;
 }
 
 h3 {
-	color: white;
+	color: var(--text-color);
 	font-size: 24px;
 	text-align: center;
 	padding-bottom: 24px;
 }
 
 p {
-	color: white;
+	color: var(--text-color);
 	font-size: 12px;
 	text-align: center;
 	padding-bottom: 24px;
@@ -43,11 +50,11 @@ img {
 
 
 a:link {
-	color: white;
+	color: var(--accent-color);
 }
 
 a:visited {
-	color: white;
+	color: var(--text-color);
 }
 
 ul {
@@ -65,26 +72,26 @@ ul {
 }
 
 #blog a:hover {
-	background-color: #333;
+	background-color: var(--lite-color);
 }
 
 ul li a {
 	display: block;
-	color: white;
+	color: var(--text-color);
 	padding: 14px 16px;
 	text-decoration: none;
 }
 
 ul li a:hover {
-	background-color: #282828;
+	background-color: var(--bg-color);
 }
 
 ul li a:active {
-	background-color: #282828;
+	background-color: var(--bg-color);
 }
 
 header {
-	background-color: #333;
+	background-color: var(--lite-color);
 	width: 100%;
 	position: fixed;
 	top: 0px;
@@ -92,16 +99,16 @@ header {
 }
 
 nav {
-	color: white;
+	color: var(--text-color);
 }
 
 nav a.current {
-	background-color: #282828;
+	background-color: var(--bg-color);
 	font-weight: bold;
 }
 
 figcaption { 
-	color: white;
+	color: var(--text-color);
 	font-style: italic;
 	font-size: 12px;
 	font-family: monospace;
@@ -113,7 +120,7 @@ footer {
 	left: 0px;
 	width: 100%;
 	height: 42px;
-	background-color: #333;
+	background-color: var(--lite-color);
 	padding-bottom: 8px;
 	font-size: 10px;
 }
@@ -158,11 +165,11 @@ footer p {
 
 .grid-item .caption {
 	padding: 2px;
-	color: white;
+	color: var(--text-color);
 	font-size: 10px;
 	font-style: italic;
 	text-align: center;
-	background: #282828;
+	background-color: var(--bg-color);
 	font-family: monospace;
 }
 
