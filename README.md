@@ -13,6 +13,11 @@ simply put:
 ```
 in /etc/nginx/sites-available/website-conf
 
-download .woff/2 Libre Baskerville files from fontsource github or pick your own from wherever and replace in styles.css
+## images
 
 create images folder and update paths in photos.html with correct path/filenames
+
+## extras
+
+you can use browser fonts or host your own by downloading .woff/2 files from fontsource github, saving in a fonts/ dir in webroot and updating accordingly in styles.css
+
