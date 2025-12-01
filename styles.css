@@ -1,7 +1,7 @@
 :root {
 	--bg-color:#3F4739;
 	--lite-color:#717568;
-	--text-color:#E1F4CB;
+	--text-color:white;
 	--accent-color:#F1BF98;
 }
 
@@ -49,13 +49,10 @@ img {
 }
 
 
-a:link {
-	color: var(--accent-color);
+a {
+	color: var(--text-color);
 }
 
-a:visited {
-	color: var(--accent-color);
-}
 
 ul {
 	list-style-type: none;
@@ -66,12 +63,16 @@ ul {
 	text-align: center;
 }
 
-#blog {
+.blog {
 	display: grid;
 	padding: 12px;
 }
 
-#blog a:hover {
+.blog a {
+	color: var(--accent-color);
+}
+
+.blog a:hover {
 	background-color: var(--lite-color);
 }
 
@@ -105,7 +106,7 @@ nav {
 nav a.current {
 	background-color: var(--bg-color);
 	font-weight: bold;
-	color: var(--text-color);
+	color: var(--accent-color);
 }
 
 figcaption { 
@@ -189,3 +190,52 @@ footer p {
 		column-count: 1;
 	}
 }
+
+/* HERO SECTION WITH KEYSTONE SHAPE */
+
+.hero-container {
+	position: relative;
+	width: auto;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	animation: slideshow 20s infinite;
+}
+
+/* Keyframe animation cycling through all 20 images */
+@keyframes slideshow {
+	0% { background-image: url('images/MC1019-4-1.webp'); }
+	5% { background-image: url('images/MB1019-3-1.webp'); }
+	10% { background-image: url('images/MC1037-4-1.webp'); }
+	15% { background-image: url('images/PENN1.webp'); }
+	20% { background-image: url('images/MB1036-1-2.webp'); }
+	25% { background-image: url('images/PENN8.webp'); }
+	30% { background-image: url('images/MB1025-1-1.webp'); }
+	35% { background-image: url('images/PENN7.webp'); }
+	40% { background-image: url('images/PENN6.webp'); }
+	45% { background-image: url('images/MB1039-2-1.webp'); }
+	50% { background-image: url('images/PENN5.webp'); }
+	55% { background-image: url('images/PENN4.webp'); }
+	60% { background-image: url('images/PENN3.webp'); }
+	65% { background-image: url('images/PENN2.webp'); }
+	70% { background-image: url('images/MC1039-1-1.webp'); }
+	75% { background-image: url('images/MC1036-3-1.webp'); }
+	80% { background-image: url('images/MB1040-1-1.webp'); }
+	85% { background-image: url('images/MC1019-4-2.webp'); }
+	90% { background-image: url('images/MC1001-4-2.webp'); }
+	95% { background-image: url('images/PENN9.webp'); }
+	100% { background-image: url('images/MC1019-4-1.webp'); }
+}
+
