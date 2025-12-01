@@ -15,6 +15,8 @@
 }
 
 body {
+	margin: 0;
+	padding: 0;
 	font-family: "Young Serif", serif;
 	padding-top: 64px;
 	padding-bottom: 128px;
@@ -24,20 +26,22 @@ body {
 h1 {
 	color: var(--text-color);
 	font-size: 32px;
+	margin-left: 4px;
 	text-align: left;
-	padding-bottom: 24px;
+	padding-bottom: 16px;
 }
 
 h3 {
 	color: var(--text-color);
-	font-size: 24px;
+	font-size: 22px;
+	margin-left: 4px;
 	text-align: left;
-	padding-bottom: 24px;
 }
 
 p {
 	color: var(--text-color);
 	font-size: 12px;
+	margin-left: 8px;
 	text-align: left;
 	padding-bottom: 24px;
 }
@@ -100,9 +104,11 @@ header {
 	position: fixed;
 	top: 0px;
 	left: 0px;
+	z-index: 100;
 }
 
 nav {
+	z-index: 10;
 	color: var(--text-color);
 }
 
@@ -205,12 +211,14 @@ footer p {
 
 .hero-container {
 	position: relative;
-	width: auto;
+	width: 100%;
 	height: 100vh;
 	overflow: hidden;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
+	margin: 0;
+	padding: 0;
 }
 
 .hero-background {
@@ -221,7 +229,19 @@ footer p {
 	height: 100%;
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
 	animation: slideshow 20s infinite;
+}
+
+.hero-content {
+	z-index: 1;
+	position: relative;
+	background: var(--lite-color);
+	padding-top: 4px;
+	padding-left: 2px;
+	max-width: 500px;
+	margin-right: 24px;
+	text-align: left;
 }
 
 /* Keyframe animation cycling through all 20 images */
